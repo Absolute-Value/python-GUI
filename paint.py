@@ -43,7 +43,7 @@ class Paint:
     # マウス左ボタン押下
     def on_mouse_left(self, event):
         # 直線描画
-        self.curr_id = self.canvas.create_line(event.x, event.y, event.x, event.y, fill = self.color, width = 5)
+        self.curr_id = self.canvas.create_line(event.x, event.y, event.x, event.y, fill = self.color, width = 5, capstyle = tkinter.ROUND)
 
     # ドラッグ中
     def dragging(self, event):
